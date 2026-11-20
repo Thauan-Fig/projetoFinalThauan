@@ -8,34 +8,30 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-info-subtle pt-5">
-    <!-- Menu de nav -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
-      <div class="container">
-          <a class="navbar-brand fw-bold" href="#inicio">
-              Geopolítica
-          </a>
-          <button class="navbar-toggler" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#menuPrincipal"
-              aria-controls="menuPrincipal"
-              aria-expanded="false"
-              aria-label="Abrir menu">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="menuPrincipal">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                      <a class="nav-link fw-semibold fs-5" href="#conceitos">Conceitos</a>
-                  </li>
-                  <li class="nav-item fw-semibold fs-5">
-                      <a class="nav-link" href="#mapas">Mapas</a>
-                  </li>
-                  <li class="nav-item fw-semibold fs-5">
-                      <a class="nav-link" href="#duvidas">Dúvidas</a>
-                  </li>
-              </ul>
-          </div>
+  <!-- Menu de nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow" style="height: 80px;">
+    <div class="container h-100">
+      <a class="navbar-brand position-relative d-flex align-items-center fw-bold fs-4 h-100" href="inicio.html">
+        <img src="../img/logo.png" alt="Logo do site" width="100" height="100" class="object-fit-contain position-absolute top-50 start-0 translate-middle-y">
+        <span class="ms-5 ps-5">Geopolítica</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold fs-5 px-3" href="#conceitos">Conceitos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold fs-5 px-3" href="#mapas">Mapas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold fs-5 px-3" href="#duvidas">Dúvidas</a>
+          </li>
+        </ul>
       </div>
+    </div>
   </nav>
   <!-- Banner -->
   <header id="inicio" class="position-relative overflow-hidden text-white py-5">
@@ -522,37 +518,21 @@
     </section>
   </main>
   <!-- Rodapé -->
-    <footer class="border-top bg-white py-4">
-
-        <div class="container text-center">
-
-            <p class="fw-semibold mb-2">
-                Contato:
-            </p>
-
-            <p class="mb-1">
-                E-mail:
-                <a href="mailto:thauansfigueiredo@gmail.com">
-                    thauansfigueiredo@gmail.com
-                </a>
-            </p>
-
-            <p class="mb-3">
-                Telefone: (54) 99143-6729
-            </p>
-
-            <p class="text-body-secondary small mb-0">
-                &copy; 2026 Thauan Sachet de Figueiredo.
-                Todos os direitos reservados.
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="../js/bootstrap.bundle.min.js"></script>
-
+  <footer class="bg-primary text-white py-4">
+    <div class="container text-center">
+      <p class="fw-semibold mb-2">Contato:</p>
+      <p class="mb-1">E-mail:
+        <a href="mailto:thauansfigueiredo@gmail.com"
+        class="text-white">thauansfigueiredo@gmail.com</a>
+      </p>
+      <p class="mb-3">Telefone: (54) 99143-6729</p>
+      <hr class="border-light opacity-50">
+      <p class="small mb-0">
+        &copy; 2026 Thauan Sachet de Figueiredo.
+        Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
 </body>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </html>

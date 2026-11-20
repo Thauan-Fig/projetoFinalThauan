@@ -433,77 +433,46 @@
             </div>
             <div class="card-body p-4">
               <p class="text-body-secondary mb-4">
-              Tem alguma dúvida sobre qualquer assunto envolvendo
-              geopolítica? Envie sua pergunta.</p>
-              <form action="#" method="post">
-              <!-- Informações gerais -->
+              Tem alguma dúvida sobre qualquer assunto envolvendo geopolítica? Envie sua pergunta.
+              </p>
+              <form id="formDuvidas" action="#" method="post" novalidate>
+                <!-- Informações gerais -->
                 <fieldset class="mb-4">
                   <legend class="fs-5 fw-semibold mb-3">Informações Gerais</legend>
                   <div class="mb-3">
-                    <label for="nome" class="form-label">Nome:</label>
-                    <input type="text"
-                    class="form-control"
-                    id="nome"
-                    name="nome"
-                    placeholder="Digite seu nome"
-                    required>
+                    <label for="nome" class="form-label">Nome completo:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Ex.: Maria da Silva" required>
+                    <div class="invalid-feedback">Informe pelo menos duas palavras no nome.</div>
                   </div>
                   <div class="mb-3">
                     <label for="idade" class="form-label">Idade:</label>
-                    <input type="number"
-                    class="form-control"
-                    id="idade"
-                    name="idade"
-                    placeholder="Digite sua idade"
-                    min="1"
-                    max="120"
-                    required>
+                    <input type="text" class="form-control" id="idade" name="idade" placeholder="Ex.: 18" inputmode="numeric" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                    <div class="invalid-feedback">Informe apenas números inteiros entre 4 e 110 anos.</div>
                   </div>
                   <div class="mb-3">
                     <label for="email" class="form-label">E-mail:</label>
-                    <input type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="exemplo@email.com"
-                    required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Ex.: maria@email.com" required>
+                    <div class="invalid-feedback">Insira um e-mail válido, como maria@email.com.</div>
                   </div>
                 </fieldset>
                 <!-- Como conheceu o site -->
                 <div class="mb-4">
-                  <label for="plataformas" class="form-label fw-semibold">
-                  Como você ouviu falar de nosso site?</label>
-                  <select name="plataformas"
-                  id="plataformas"
-                  class="form-select"
-                  required>
+                  <label for="plataformas" class="form-label fw-semibold">Como você ouviu falar de nosso site?</label>
+                  <select name="plataformas" id="plataformas" class="form-select" required>
                     <option value="" selected disabled>Selecione uma opção</option>
-                    <option value="amigo">
-                      Ouviu de um amigo ou conhecido
-                    </option>
-                    <option value="redes">
-                      Instagram/Facebook
-                    </option>
-                    <option value="yt">
-                      YouTube
-                    </option>
-                    <option value="google">
-                      Google
-                    </option>
-                    <option value="outro">
-                      Outra forma
-                    </option>
+                    <option value="amigo">Ouviu de um amigo ou conhecido</option>
+                    <option value="redes">Instagram/Facebook</option>
+                    <option value="yt">YouTube</option>
+                    <option value="google">Google</option>
+                     <option value="outro">Outra forma</option>
                   </select>
+                  <div class="invalid-feedback">Selecione uma opção.</div>
                 </div>
                 <!-- Dúvida -->
                 <div class="mb-4">
-                  <label for="duvida" class="form-label fw-semibold">
-                  Escreva sua dúvida aqui:</label>
-                  <textarea class="form-control"
-                  id="duvida"
-                  name="duvida"
-                  rows="7"
-                  placeholder="Digite sua dúvida sobre geopolítica..." required></textarea>
+                  <label for="duvida" class="form-label fw-semibold">Escreva sua dúvida aqui:</label>
+                  <textarea class="form-control" id="duvida" name="duvida" rows="7" placeholder="Ex.: Como a geopolítica influencia a economia brasileira?" required></textarea>
+                  <div class="invalid-feedback">A dúvida deve conter pelo menos 10 caracteres.</div>
                 </div>
                 <!-- Botões -->
                 <div class="d-flex flex-wrap gap-2">
@@ -511,6 +480,9 @@
                   <button type="reset" class="btn btn-outline-primary">Excluir</button>
                 </div>
               </form>
+              <!-- Mensagem de sucesso -->
+              <div id="mensagemSucesso" class="alert alert-success mt-3 d-none" role="alert">
+                Dúvida enviada com sucesso!</div>
             </div>
           </div>
         </div>

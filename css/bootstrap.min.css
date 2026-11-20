@@ -6,21 +6,21 @@
 /*# sourceMappingURL=bootstrap.min.css.map */
 
 /* Carrossel */
- #carouselMapas {
+ #carrosselMapas {
      max-width: 1200px;
      margin: 2rem auto;
  }
- #carouselMapas .carousel-item {
+ #carrosselMapas .carousel-item {
      height: clamp(320px, 65vh, 680px);
      background: #171717;
  }
- #carouselMapas .carousel-item img {
+ #carrosselMapas .carousel-item img {
      width: 100%;
      height: 100%;
      object-fit: contain;
      padding: 1rem 4.5rem 5rem;
  }
- #carouselMapas .carousel-caption {
+ #carrosselMapas .carousel-caption {
      right: 10%;
      left: 10%;
      bottom: 10;
@@ -28,18 +28,18 @@
      background: rgba(0, 0, 0, .78);
      border-radius: .5rem .5rem 0 0;
  }
- #carouselMapas .carousel-caption h5 {
+ #carrosselMapas .carousel-caption h5 {
      margin: 0;
      color: #fff;
      font-size: clamp(.9rem, 2vw, 1.2rem);
  }
- #carouselMapas .carousel-control-prev,
- #carouselMapas .carousel-control-next {
+ #carrosselMapas .carousel-control-prev,
+ #carrosselMapas .carousel-control-next {
      width: 8%;
      opacity: 1;
  }
- #carouselMapas .carousel-control-prev-icon,
- #carouselMapas .carousel-control-next-icon {
+ #carrosselMapas .carousel-control-prev-icon,
+ #carrosselMapas .carousel-control-next-icon {
      width: 2.5rem;
      height: 2.5rem;
      padding: 1.4rem;
@@ -47,30 +47,30 @@
      background-size: 55%;
      border-radius: 50%;
  }
- #carouselMapas .carousel-indicators {
+ #carrosselMapas .carousel-indicators {
      margin-bottom: .5rem;
  }
  @media (max-width: 576px) {
-     #carouselMapas {
+     #carroselMapas {
          margin: 1rem auto;
      }
-     #carouselMapas .carousel-item {
+     #carrosselMapas .carousel-item {
          height: 420px;
      }
-     #carouselMapas .carousel-item img {
+     #carrosselMapas .carousel-item img {
          padding: .75rem .75rem 5.5rem;
      }
-     #carouselMapas .carousel-caption {
+     #carrosselMapas .carousel-caption {
          right: 8%;
          left: 8%;
          padding: .65rem .5rem;
      }
-     #carouselMapas .carousel-control-prev,
+     #carrosselMapas .carousel-control-prev,
      #carouselMapas .carousel-control-next {
          width: 12%;
      }
-     #carouselMapas .carousel-control-prev-icon,
-     #carouselMapas .carousel-control-next-icon {
+     #carrosselMapas .carousel-control-prev-icon,
+     #carrosselMapas .carousel-control-next-icon {
          width: 2rem;
          height: 2rem;
          padding: 1.1rem;
